@@ -184,3 +184,78 @@ footer {
     font-size: 1.25rem;
   }
 }
+
+/* ... (previous CSS styles) ... */
+
+/* Product Card Styles */
+.product {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product h3 {
+  margin-top: 1rem;
+  color: #1e88e5;
+}
+
+/* Product Details Styles */
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  margin: 2rem;
+}
+
+.product-image {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  color: #1e88e5;
+  margin-bottom: 1rem;
+}
+
+.product-info p {
+  margin-bottom: 1rem;
+}
+
+.product-info input[type="number"] {
+  width: 80px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-info button.add-to-cart {
+  background-color: #1e88e5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
