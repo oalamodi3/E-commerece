@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Product Details - MyStore</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">MyStore</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-details">
+      <div class="product-image">
+        <img src="images/product1.jpg" alt="Product 1">
+      </div>
+      <div class="product-info">
+        <h1>Product 1</h1>
+        <p>$10.00</p>
+        <p>Description of Product 1. This is a sample description to showcase the product details page.</p>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MyStore. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Get the product ID from the URL query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
+    // Fetch the product details and update the page
+    fetchProductDetails(productId);
+
+    function fetchProductDetails(id) {
+      // Fetch the product details from an API or database
+      // and update the page content accordingly
+      console.log(`Fetching details for product with ID: ${id}`);
+    }
+  </script>
+</body>
+</html>
